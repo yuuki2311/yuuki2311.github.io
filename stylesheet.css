@@ -59,7 +59,6 @@ a{
 }
 .icon{
   display:inline-block;
-  border:solid;
   margin-top:3mm;
   padding:5mm;
   border-radius:10px;
@@ -68,12 +67,13 @@ a{
 }
 .sns{
   float:right;
-  margin-right:10mm;
+  display:none;
 }
 .clear-right{
   clear:right;
 }
 footer{
+  margin-top:20mm;
   background-color:black;
   color:white;
   opacity:0.8;
@@ -83,10 +83,29 @@ footer h2{
 }
 
 @media(max-width:670px){
+  .container{
+    padding:0 3mm;
+    text-align:center;
+  }
+  .header-logo{
+    width:100%;
+  }
   header a{
     display:none;
   }
-  .header-logo{
-    letter-spacing:;
+  .top{
+    background-size:100% auto;
+    height:50mm;
+  }
+  .image{
+    width:100%;
+  }
+  .sns{
+    display:block;
+    width:100%;
+    padding-top:20mm;
+  }
+  .icon{
+    width:100%;
   }
 }
