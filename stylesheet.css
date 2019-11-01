@@ -6,14 +6,13 @@
 a{
   text-decoration:none;
 }
-header{
+.container{
   width:100%;
-  height:mm;
+  padding:0 10mm;
 }
 .header-logo{
   float:left;
   line-height:20mm;
-  margin-left:10mm;
 }
 .header-menu a{
   float:left;
@@ -28,26 +27,17 @@ header{
 .top{
   background-image:url(https://github.com/yuuki2311/yuuki2311.github.io/blob/master/IMG_2948.jpeg?raw=true);
   background-size:cover;
-  width:100%;
   height:150mm;
   color:white;
 }
 .top h2{
   line-height:20mm;
-  margin-left:10mm;
-}
-.mid{
-width:100%;
-height:mm;
 }
 .mid h2{
   line-height:20mm;
-  margin-left:10mm;
 }
 .mid h3{
   line-height:20mm;
-  margin-left:10mm;
-  margin-right:10mm;
 }
 .image{
   float:left;
@@ -58,21 +48,14 @@ height:mm;
   width:100%;
   border:solid;
 }
-.last{
-  width:100%;
-  height:mm;
-}
 .last h2{
   line-height:20mm;
-  margin-left:10mm;
 }
 .last h3{
   line-height:20mm;
-  margin-left:10mm;
-  margin-right:10mm;
 }
 .last li{
-  margin-left:20mm;
+  margin-left:10mm;
 }
 .icon{
   display:inline-block;
@@ -85,19 +68,25 @@ height:mm;
 }
 .sns{
   float:right;
-  margin-right:20mm;
+  margin-right:10mm;
 }
 .clear-right{
   clear:right;
 }
 footer{
-  width:100%;
-  height:mm;
   background-color:black;
   color:white;
   opacity:0.8;
 }
 footer h2{
   line-height:20mm;
-  margin-left:10mm;
+}
+
+@media(max-width:670px){
+  header a{
+    display:none;
+  }
+  .header-logo{
+    letter-spacing:;
+  }
 }
